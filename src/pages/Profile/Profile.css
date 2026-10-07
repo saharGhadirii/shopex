@@ -1,0 +1,366 @@
+.profile-page {
+  min-height: calc(100vh - 160px);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 60px 20px;
+
+  box-sizing: border-box;
+
+  direction: rtl;
+}
+
+
+.profile-card {
+  width: 100%;
+
+  max-width: 650px;
+
+  padding: 40px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border: 1px solid #eadcda;
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 15px 40px rgba(64, 40, 39, 0.07);
+}
+
+
+.profile-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  padding-bottom: 28px;
+
+  border-bottom: 1px solid #f1e4e2;
+}
+
+
+.profile-avatar {
+  width: 70px;
+
+  height: 70px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f7e9e6;
+
+  color: #9d5a55;
+
+  font-size: 1.7rem;
+
+  font-weight: 800;
+}
+
+
+.profile-heading span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #a96b65;
+
+  font-size: 0.62rem;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  direction: ltr;
+}
+
+
+.profile-heading h1 {
+  margin: 0;
+
+  color: #402827;
+
+  font-size: 1.7rem;
+
+  font-weight: 800;
+}
+
+
+.profile-info {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0;
+
+  margin-top: 10px;
+}
+
+
+.profile-item {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 20px 0;
+
+  border-bottom: 1px solid #f5eae8;
+}
+
+
+.profile-item:last-child {
+  border-bottom: none;
+}
+
+
+.profile-item-label {
+  color: #806563;
+
+  font-size: 0.78rem;
+}
+
+
+.profile-item strong {
+  color: #402827;
+
+  font-size: 0.85rem;
+
+  font-weight: 700;
+
+  text-align: left;
+
+  direction: ltr;
+}
+
+
+.profile-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 25px;
+}
+
+
+.profile-products-btn,
+.profile-logout-btn {
+  flex: 1;
+
+  padding: 12px 18px;
+
+  border-radius: 9px;
+
+  font-family: inherit;
+
+  font-size: 0.8rem;
+
+  font-weight: 700;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  text-decoration: none;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.profile-products-btn {
+  border: none;
+
+  background: #9d5a55;
+
+  color: #ffffff;
+}
+
+
+.profile-products-btn:hover {
+  background: #814944;
+
+  transform: translateY(-2px);
+}
+
+
+.profile-logout-btn {
+  border: 1px solid #eadcda;
+
+  background: #ffffff;
+
+  color: #9d5a55;
+}
+
+
+.profile-logout-btn:hover {
+  background: #fdf6f5;
+
+  transform: translateY(-2px);
+}
+
+
+.profile-login-box {
+  width: 100%;
+
+  max-width: 500px;
+
+  padding: 45px 30px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border: 1px solid #eadcda;
+
+  border-radius: 20px;
+
+  text-align: center;
+
+  box-shadow:
+    0 15px 40px rgba(64, 40, 39, 0.07);
+}
+
+
+.profile-login-box h2 {
+  margin: 0 0 12px;
+
+  color: #402827;
+
+  font-size: 1.4rem;
+}
+
+
+.profile-login-box p {
+  margin: 0 0 25px;
+
+  color: #806563;
+
+  font-size: 0.82rem;
+
+  line-height: 1.9;
+}
+
+
+.profile-login-btn {
+  display: inline-block;
+
+  padding: 11px 25px;
+
+  border-radius: 9px;
+
+  background: #9d5a55;
+
+  color: #ffffff;
+
+  font-size: 0.8rem;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.profile-login-btn:hover {
+  background: #814944;
+
+  transform: translateY(-2px);
+}
+
+
+@media (max-width: 600px) {
+
+  .profile-page {
+    min-height: auto;
+
+    padding: 40px 16px 60px;
+  }
+
+
+  .profile-card {
+    padding: 25px 18px;
+
+    border-radius: 18px;
+  }
+
+
+  .profile-header {
+    gap: 14px;
+
+    padding-bottom: 22px;
+  }
+
+
+  .profile-avatar {
+    width: 58px;
+
+    height: 58px;
+
+    font-size: 1.4rem;
+  }
+
+
+  .profile-heading h1 {
+    font-size: 1.4rem;
+  }
+
+
+  .profile-item {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+    padding: 16px 0;
+  }
+
+
+  .profile-item strong {
+    text-align: right;
+
+    direction: ltr;
+  }
+
+
+  .profile-actions {
+    flex-direction: column;
+
+    margin-top: 20px;
+  }
+
+
+  .profile-products-btn,
+  .profile-logout-btn {
+    width: 100%;
+
+    box-sizing: border-box;
+  }
+
+}

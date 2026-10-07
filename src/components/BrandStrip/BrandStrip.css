@@ -1,0 +1,143 @@
+.brand-strip {
+  width: 100%;
+
+  margin: 0 auto 80px;
+
+  padding: 55px 0;
+
+  direction: rtl;
+
+  overflow: hidden;
+
+  background: #fffaf9;
+}
+
+
+.brand-strip-header {
+  text-align: center;
+
+  margin-bottom: 38px;
+}
+
+.brand-strip-header span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #a96b65;
+
+  font-size: 0.68rem;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.brand-strip-header h2 {
+  margin: 0;
+
+  color: #402827;
+
+  font-size: 1.8rem;
+
+  font-weight: 800;
+}
+
+
+.brand-strip-wrapper {
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.brand-strip-track {
+  display: flex;
+
+  align-items: center;
+
+  width: max-content;
+
+  animation: brandScroll 28s  linear infinite;
+}
+
+
+
+.brand-item {
+  flex-shrink: 0;
+
+  min-width: 180px;
+
+  padding: 0 35px;
+
+  color: #594341;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 1.15rem;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  text-align: center;
+
+  white-space: nowrap;
+
+  opacity: 0.72;
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.brand-item:hover {
+  opacity: 1;
+
+  transform: scale(1.04);
+}
+
+
+
+@keyframes brandScroll {
+
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(50%);
+  }
+
+}
+
+
+
+@media (max-width: 600px) {
+
+  .brand-strip {
+    margin-bottom: 60px;
+
+    padding: 45px 0;
+  }
+
+  .brand-strip-header {
+    margin-bottom: 28px;
+  }
+
+  .brand-strip-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .brand-strip-header span {
+    font-size: 0.6rem;
+  }
+
+  .brand-item {
+    min-width: 135px;
+
+    padding: 0 20px;
+
+    font-size: 0.9rem;
+  }
+
+}

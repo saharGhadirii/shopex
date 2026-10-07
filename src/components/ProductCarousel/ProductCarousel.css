@@ -1,0 +1,522 @@
+.product-carousel {
+  max-width: 1200px;
+
+  margin: 0 auto 80px;
+
+  padding: 0 20px;
+
+  box-sizing: border-box;
+
+  direction: rtl;
+}
+
+
+
+.product-carousel-header {
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  margin-bottom: 30px;
+}
+
+.product-carousel-label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #a96b65;
+
+  font-size: 0.7rem;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.product-carousel-header h2 {
+  margin: 0 0 7px;
+
+  color: #402827;
+
+  font-size: 2rem;
+
+  font-weight: 800;
+}
+
+.product-carousel-header p {
+  margin: 0;
+
+  color: #806563;
+
+  font-size: 0.9rem;
+}
+
+
+
+
+.product-carousel-see-all {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: #9d5a55;
+
+  text-decoration: none;
+
+  font-size: 0.85rem;
+
+  font-weight: 700;
+}
+
+.product-carousel-see-all span {
+  font-size: 1.1rem;
+
+  transition: transform 0.25s ease;
+}
+
+.product-carousel-see-all:hover span {
+  transform: translateX(-4px);
+}
+
+
+
+.product-carousel-wrapper {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+}
+
+
+
+.product-carousel-grid {
+  flex: 1;
+
+  min-width: 0;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+
+
+
+.product-carousel-card {
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #eadcda;
+
+  border-radius: 18px;
+
+  color: inherit;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 5px 20px rgba(91, 57, 53, 0.05);
+
+  animation: productCardIn 0.35s ease;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.product-carousel-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 16px 35px rgba(91, 57, 53, 0.13);
+}
+
+
+@keyframes productCardIn {
+
+  from {
+    opacity: 0;
+
+    transform: translateX(12px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateX(0);
+  }
+
+}
+
+
+
+.product-carousel-image {
+  position: relative;
+
+  width: 100%;
+
+  height: 235px;
+
+  overflow: hidden;
+
+  background: #f8f0ee;
+}
+
+.product-carousel-image img {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+
+  transition: transform 0.4s ease;
+}
+
+.product-carousel-card:hover
+.product-carousel-image img {
+  transform: scale(1.05);
+}
+
+
+
+
+.product-carousel-badge {
+  position: absolute;
+
+  top: 14px;
+
+  right: 14px;
+
+  padding: 6px 10px;
+
+  border-radius: 7px;
+
+  background: #9d5a55;
+
+  color: #ffffff;
+
+  font-size: 0.7rem;
+
+  font-weight: 700;
+}
+
+
+
+
+.product-carousel-info {
+  padding: 16px;
+}
+
+.product-carousel-category {
+  display: inline-block;
+
+  margin-bottom: 8px;
+
+  color: #a96b65;
+
+  font-size: 0.7rem;
+
+  font-weight: 600;
+}
+
+.product-carousel-info h3 {
+  min-height: 44px;
+
+  margin: 0 0 14px;
+
+  color: #402827;
+
+  font-size: 0.95rem;
+
+  line-height: 1.6;
+
+  font-weight: 700;
+}
+
+
+
+.product-carousel-price {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.product-carousel-prices {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+}
+
+.product-carousel-new-price {
+  color: #402827;
+
+  font-size: 1.05rem;
+
+  font-weight: 800;
+}
+
+.product-carousel-old-price {
+  color: #a99a98;
+
+  font-size: 0.78rem;
+
+  text-decoration: line-through;
+}
+
+
+
+
+.product-carousel-card-arrow {
+  width: 30px;
+
+  height: 30px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f7efed;
+
+  color: #9d5a55;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.product-carousel-card:hover
+.product-carousel-card-arrow {
+  background: #9d5a55;
+
+  color: #ffffff;
+}
+
+
+
+
+.product-carousel-arrow {
+  flex-shrink: 0;
+
+  width: 42px;
+
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 1px solid #eadcda;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: #9d5a55;
+
+  font-size: 1.1rem;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 5px 15px rgba(91, 57, 53, 0.07);
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.product-carousel-arrow:hover {
+  background: #9d5a55;
+
+  color: #ffffff;
+
+  transform: translateY(-2px);
+}
+
+
+
+.product-carousel-dots {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 7px;
+
+  margin-top: 22px;
+}
+
+.product-carousel-dot {
+  width: 7px;
+
+  height: 7px;
+
+  padding: 0;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #ddccca;
+
+  cursor: pointer;
+
+  transition:
+    width 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.product-carousel-dot.active {
+  width: 22px;
+
+  border-radius: 10px;
+
+  background: #9d5a55;
+}
+
+
+
+
+@media (max-width: 1000px) {
+
+  .product-carousel-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+
+
+@media (max-width: 800px) {
+
+  .product-carousel-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 16px;
+  }
+
+  .product-carousel-arrow {
+    width: 38px;
+
+    height: 38px;
+  }
+
+  .product-carousel-image {
+    height: 220px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .product-carousel {
+    padding: 0 16px;
+
+    margin-bottom: 60px;
+  }
+
+  .product-carousel-header {
+    margin-bottom: 22px;
+  }
+
+  .product-carousel-header h2 {
+    font-size: 1.55rem;
+  }
+
+  .product-carousel-header p {
+    font-size: 0.8rem;
+  }
+
+  .product-carousel-label {
+    font-size: 0.62rem;
+  }
+
+  .product-carousel-see-all {
+    font-size: 0.75rem;
+  }
+
+  .product-carousel-wrapper {
+    gap: 8px;
+  }
+
+  .product-carousel-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+  }
+
+  .product-carousel-arrow {
+    width: 34px;
+
+    height: 34px;
+
+    font-size: 0.9rem;
+  }
+
+  .product-carousel-image {
+    height: 170px;
+  }
+
+  .product-carousel-info {
+    padding: 12px;
+  }
+
+  .product-carousel-info h3 {
+    font-size: 0.82rem;
+
+    min-height: 40px;
+
+    margin-bottom: 10px;
+  }
+
+  .product-carousel-badge {
+    top: 9px;
+
+    right: 9px;
+
+    font-size: 0.62rem;
+
+    padding: 5px 7px;
+  }
+
+  .product-carousel-new-price {
+    font-size: 0.9rem;
+  }
+
+  .product-carousel-old-price {
+    font-size: 0.68rem;
+  }
+
+  .product-carousel-card-arrow {
+    width: 26px;
+
+    height: 26px;
+
+    font-size: 0.8rem;
+  }
+
+}

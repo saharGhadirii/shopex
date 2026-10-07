@@ -1,0 +1,225 @@
+.products-container {
+  max-width: 1200px;
+
+  margin: 50px auto 80px;
+
+  padding: 0 20px;
+
+  box-sizing: border-box;
+
+  direction: rtl;
+}
+
+
+.products-title {
+  margin: 0 0 30px;
+
+  color: #402827;
+
+  font-size: 2rem;
+
+  font-weight: 800;
+
+  text-align: right;
+}
+
+
+.category-filter {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-bottom: 28px;
+
+  padding-bottom: 18px;
+
+  border-bottom: 1px solid #eadcda;
+
+  overflow-x: auto;
+
+  scrollbar-width: none;
+}
+
+
+
+
+.category-filter button {
+  flex-shrink: 0;
+
+  padding: 9px 18px;
+
+  border: none;
+
+  border-radius: 30px;
+
+  background: transparent;
+
+  color: #806563;
+
+  font-family: inherit;
+
+  font-size: 0.82rem;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+
+.category-filter button:hover {
+  color: #9d5a55;
+}
+
+
+.category-filter button.active {
+  background: #9d5a55;
+
+  color: #ffffff;
+}
+
+.products-toolbar {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 25px;
+}
+
+
+.products-count {
+  color: #806563;
+
+  font-size: 0.8rem;
+}
+
+
+.products-sort {
+  padding: 10px 14px;
+
+  border: 1px solid #eadcda;
+
+  border-radius: 9px;
+
+  background: #ffffff;
+
+  color: #402827;
+
+  font-family: inherit;
+
+  font-size: 0.8rem;
+
+  outline: none;
+
+  cursor: pointer;
+}
+
+
+.products-sort:focus {
+  border-color: #9d5a55;
+}
+
+
+.grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 24px;
+}
+
+
+
+@media (max-width: 1000px) {
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+
+
+@media (max-width: 750px) {
+
+  .products-container {
+    margin-top: 35px;
+  }
+
+  .products-title {
+    font-size: 1.7rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 16px;
+  }
+
+}
+
+
+
+@media (max-width: 500px) {
+
+  .products-container {
+    margin: 30px auto 60px;
+
+    padding: 0 15px;
+  }
+
+
+  .products-title {
+    margin-bottom: 22px;
+
+    font-size: 1.5rem;
+  }
+
+
+  .category-filter {
+    justify-content: flex-start;
+
+    gap: 7px;
+
+    margin-bottom: 22px;
+  }
+
+
+  .category-filter button {
+    padding: 8px 14px;
+
+    font-size: 0.72rem;
+  }
+
+
+  .products-toolbar {
+    margin-bottom: 20px;
+  }
+
+
+  .products-count {
+    font-size: 0.72rem;
+  }
+
+
+  .products-sort {
+    padding: 8px 10px;
+
+    font-size: 0.7rem;
+  }
+
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+  }
+
+}
