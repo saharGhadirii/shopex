@@ -24,7 +24,7 @@ const Home = () => {
 
       <BrandStrip />
 
-      <EditorialBanner />
+   
 
       <Newsletter />
 
